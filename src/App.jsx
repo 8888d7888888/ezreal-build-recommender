@@ -197,7 +197,7 @@ const ITEMS = {
   shojin: { name: "Spear of Shojin", id: "3161" },
   bt: { name: "Bloodthirster", id: "3072" },
   endlessHunger: { name: "Endless Hunger", id: "2502" },
-  tear2: { name: "Tear (2nd)", id: "3070" },
+  seraphs: { name: "Seraph's Embrace", id: "3040" },
 };
 
 // --- Build Logic ---
@@ -328,8 +328,8 @@ function analyzeBuild(enemies, tempo) {
 
   // Double Tear override — add 2nd Tear note
   if (doubleTear) {
-    doubleTearNote = `Double Tear is viable here — ${fedCount} fed squishy threats who can't itemize defense. Buy a second Tear after Manamune is completed. This replaces your last flex item.`;
-    flex[flex.length - 1] = ITEMS.tear2;
+    doubleTearNote = `Double Tear is viable here — ${fedCount} fed squishy threats who can't itemize defense. Buy a second Tear after Manamune is completed and stack it into Seraph's Embrace. The extra mana + AP + shield gives you survivability against their burst. Replaces your last item slot.`;
+    flex[flex.length - 1] = ITEMS.seraphs;
   }
 
   return {
